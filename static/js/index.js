@@ -95,22 +95,11 @@ function LED3_Off(){
 	  //document.getElementById("sensor").innerHTML=message.payloadString;
 	  sms=(message.payloadString);
 	  if(sms=="Alta"){
-	  	document.getElementById("sensor1").innerHTML=sms;
+	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
 	  }
 	  if(sms=="Baja"){
-	  	document.getElementById("sensor1").innerHTML=sms;
+	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
 	  }
-	  if(sms=="Cerca"){
-	  	document.getElementById("sensor2").innerHTML=sms;
-	  }
-	  if(sms=="Lejos"){
-	  	document.getElementById("sensor2").innerHTML=sms;
-	  }
-	  if(sms=="Vacio"){
-	  	document.getElementById("sensor3").innerHTML=sms;
-	  }
-	  if(sms=="Lleno"){
-	  	document.getElementById("sensor3").innerHTML=sms;
-	  }
+
   }
   
