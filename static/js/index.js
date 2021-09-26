@@ -119,7 +119,7 @@ function Histo2(){
 	  if(sms=="Baja"){
 	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
 	  }
-	  if((sms!="Alta")&&(sms!="Baja")&&(sms!="SE A CONECTADO A LA WEB EXITOSAMENTE")){
+	  if((sms!="Alta")||(sms!="Baja")||(sms!="SE A CONECTADO A LA WEB EXITOSAMENTE")){
 	  	document.getElementById("historial").innerHTML=sms;
 	  }
 	  if(var1=="OO"){
