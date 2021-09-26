@@ -124,7 +124,7 @@ function Histo2(){
 	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;	  
 	  }
 	  if(Npalabras>=10){
-	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;	  
+	  	document.getElementById("historial").innerHTML=sms;	  
 	  }
 
 
