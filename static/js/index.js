@@ -45,14 +45,12 @@ function LED3_Off(){
 	client.send(message);
 	console.log("LED 3 APAGADO");
 }
-vizualizar="HOLA"
 //FUNCION DEL BOTON MOSTRAR HISTORIAL
 function Histo1(){
 	message = new Paho.MQTT.Message("MOSTRAR_HISTORIAL");
 	message.destinationName ="dyautibug.fie@unach.edu.ec/test1";
 	client.send(message);
 	console.log("Se Mostrara el Historial");
-	vizualizar="MUESTRA"
 }
 
 //FUNCION DEL BOTON OCULTAR HISTORIAL
@@ -61,7 +59,6 @@ function Histo2(){
 	message.destinationName ="dyautibug.fie@unach.edu.ec/test1";
 	client.send(message);
 	console.log("Se Ocultara el Historial");
-	vizualizar="OCULTA"
 }
 
 // Create a client instance
@@ -118,13 +115,8 @@ function Histo2(){
 	  if(sms=="Baja"){
 	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
 	  }
-	  if(vizualizar=="MUESTRA"){
+	  if(sms=="HOLA"){
 	  	document.getElementById("historial").innerHTML=sms;
-		vizualizar="HOLA"
-	  }
-	  if(vizualizar=="OCULTA"){
-	  	document.getElementById("historial").innerHTML="------------------";
-		vizualizar="HOLA"
 	  }
 
   }
