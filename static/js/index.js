@@ -126,6 +126,9 @@ function Histo2(){
 	  if(Npalabras>=10){
 	  	document.getElementById("historial").innerHTML=sms;	  
 	  }
+	  if(var1=="OO"){
+	  	document.getElementById("historial").innerHTML="---------------------------";	  
+	  }
 
 
   }
