@@ -46,6 +46,22 @@ function LED3_Off(){
 	console.log("LED 3 APAGADO");
 }
 
+//FUNCION DEL BOTON MOSTRAR HISTORIAL
+function Histo1(){
+	message = new Paho.MQTT.Message("MOSTRAR_HISTORIAL");
+	message.destinationName ="dyautibug.fie@unach.edu.ec/test1";
+	client.send(message);
+	console.log("Se Mostrara el Historial");
+}
+
+//FUNCION DEL BOTON OCULTAR HISTORIAL
+function Histo2(){	
+	message = new Paho.MQTT.Message("OCULTAR_HISTORIAL");
+	message.destinationName ="dyautibug.fie@unach.edu.ec/test1";
+	client.send(message);
+	console.log("Se Ocultara el Historial");
+}
+
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
