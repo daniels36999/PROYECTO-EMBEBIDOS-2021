@@ -113,14 +113,18 @@ function Histo2(){
   function onMessageArrived(message) {
     //console.log("onMessageArrived:"+message.payloadString);
 	  //document.getElementById("sensor").innerHTML=message.payloadString;
-	  sms=(message.payloadString);
+	sms=(message.payloadString);
+	Dividir = sms.split(" ");
+	Npalabras =Dividir.length;
+
 	  if(sms=="Alta"){
 	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
 	  }
 	  if(sms=="Baja"){
-	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
-		  document.getElementById("historial").innerHTML="Temperatura: "+sms.length;
-		  
+	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;	  
+	  }
+	  if(Npalabras>=10){
+	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;	  
 	  }
 
 
