@@ -89,7 +89,7 @@ function Histo2(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("dyautibug.fie@unach.edu.ec/test1");
+    //client.subscribe("dyautibug.fie@unach.edu.ec/test1");
     message = new Paho.MQTT.Message("SE A CONECTADO A LA WEB EXITOSAMENTE");
     message.destinationName = "dyautibug.fie@unach.edu.ec/test1";
     client.send(message);
@@ -119,7 +119,7 @@ function Histo2(){
 	  if(sms=="Baja"){
 	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
 	  }
-	  if((sms!="Alta")||(sms!="Baja")||(sms!="SE A CONECTADO A LA WEB EXITOSAMENTE")){
+	  if((sms!="Alta")||(sms!="Baja")){
 	  	document.getElementById("historial").innerHTML=sms;
 	  }
 	  if(var1=="OO"){
