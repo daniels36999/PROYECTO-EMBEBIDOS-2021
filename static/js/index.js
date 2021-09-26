@@ -94,11 +94,23 @@ function LED3_Off(){
     //console.log("onMessageArrived:"+message.payloadString);
 	  //document.getElementById("sensor").innerHTML=message.payloadString;
 	  sms=(message.payloadString);
-	  if(sms=="MUY ALTO"){
+	  if(sms=="Alta"){
 	  	document.getElementById("sensor1").innerHTML=sms;
 	  }
-	  if(sms=="MUY BAJO"){
+	  if(sms=="Baja"){
 	  	document.getElementById("sensor1").innerHTML=sms;
+	  }
+	  if(sms=="Cerca"){
+	  	document.getElementById("sensor2").innerHTML=sms;
+	  }
+	  if(sms=="Lejos"){
+	  	document.getElementById("sensor2").innerHTML=sms;
+	  }
+	  if(sms=="Vacio"){
+	  	document.getElementById("sensor3").innerHTML=sms;
+	  }
+	  if(sms=="Lleno"){
+	  	document.getElementById("sensor3").innerHTML=sms;
 	  }
   }
   
