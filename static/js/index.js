@@ -46,7 +46,7 @@ function LED3_Off(){
 	console.log("LED 3 APAGADO");
 }
 
-//var1="hola";
+var1="hola";
 //FUNCION DEL BOTON MOSTRAR HISTORIAL
 function Histo1(){
 	message = new Paho.MQTT.Message("MOSTRAR_HISTORIAL");
