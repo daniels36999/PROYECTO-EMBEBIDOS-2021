@@ -46,7 +46,7 @@ function LED3_Off(){
 	console.log("LED 3 APAGADO");
 }
 
-var1="hola";
+//var1="hola";
 //FUNCION DEL BOTON MOSTRAR HISTORIAL
 function Histo1(){
 	message = new Paho.MQTT.Message("MOSTRAR_HISTORIAL");
@@ -119,7 +119,7 @@ function Histo2(){
 	  if(sms=="Baja"){
 	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
 	  }
-	  if(var1=="MM"){
+	  if((sms!="Alta")||(sms=="Baja")){
 	  	document.getElementById("historial").innerHTML=sms;
 	  }
 	  if(var1=="OO"){
