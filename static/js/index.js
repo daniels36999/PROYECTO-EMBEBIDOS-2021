@@ -1,15 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 //document.getElementById("sensor1").innerHTML="LED1 ENCENDIDO";
 
-MN1="LED1_ON";
-MN2="LED1_OFF";
-MN3="LED2_ON";
-MN4="LED2_OFF";
-MN5="LED3_ON";
-MN6="LED3_OFF";
-MN7="MOSTRAR_HISTORIAL";
-MN8="OCULTAR_HISTORIAL";
-MN8="SE A CONECTADO A LA WEB EXITOSAMENTE";
 
 //FUNCION DEL BOTON ENCENDER - 1
 function LED1_On() {
@@ -128,13 +119,10 @@ function Histo2(){
 	  }
 	  if(sms=="Baja"){
 	  	document.getElementById("sensor1").innerHTML="Temperatura: "+sms;
+		  document.getElementById("historial").innerHTML="Temperatura: "+sms.length;
+		  
 	  }
-	  if((sms!="Alta")||(sms!="Baja")||(sms!=MN1)||(sms!=MN2)||(sms!=MN3)||(sms!=MN4)||(sms!=MN5)||(sms!=MN6)||(sms!=MN7)||(sms!=MN8)){
-	  	document.getElementById("historial").innerHTML=sms;
-	  }
-	  if(var1=="OO"){
-	  	document.getElementById("historial").innerHTML="-----------------------------";
-	  }
+
 
   }
   
